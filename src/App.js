@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Header from "./components/Header";
-
+import Footer from "./components/Footer";
 import GamesWrapper from "./components/GamesWrapper";
 
 function App() {
@@ -27,6 +27,7 @@ function App() {
         filterFavourites={filterFavourites}
         setFilterFavourites={setFilterFavourites}
       />
+      <Footer />
     </div>
   );
 }
