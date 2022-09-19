@@ -12,8 +12,10 @@ const Header = ({ selected, setSelected }) => {
     <header className="bg-black">
       <div className="max-w-[1640px] mx-auto p-4 flex justify-between items-center ">
         <div className="flex items-center space-x-2">
-          <img src="" alt="logo" />
-          KarazeGames
+          <h1 className="text-white text-xl font-medium">
+            <span className="text-red-600">K</span>araze
+            <span className="text-red-600"> G</span>ames
+          </h1>
         </div>
         <nav className="flex items-center space-x-2">
           <Link
