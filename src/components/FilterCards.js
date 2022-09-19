@@ -3,7 +3,7 @@ import FilterCard from "./FilterCard";
 
 const FilterCards = ({ filter }) => {
   return (
-    <div className="max-w-[1640px] mx-auto py-6 px-4 grid grid-cols-4 gap-2">
+    <div className="max-w-[1640px] mx-auto py-6 px-4 grid grid-cols-3 md:grid-cols-5 gap-2">
       <FilterCard filter={() => filter("all")} filterType="All" />
       <FilterCard filter={() => filter("pc")} filterType="PC" />
       <FilterCard filter={() => filter("switch")} filterType="Switch" />
