@@ -29,8 +29,8 @@ const GameCard = ({
     <div
       className={
         moreInfo
-          ? "flex flex-col border border-1 border-solid bg-black text-white "
-          : "flex flex-col border border-1 border-solid justify-between"
+          ? "flex flex-col border-2 border-solid bg-black text-white "
+          : "flex flex-col border-2 border-solid justify-between"
       }
     >
       <div>
