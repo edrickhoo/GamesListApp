@@ -31,7 +31,6 @@ const MoreInfo = ({
           />
         ) : (
           <div className="h-[100vh] w-full flex justify-center items-center">
-            {" "}
             <p className="text-2xl text-white">Loading...</p>
           </div>
         )}

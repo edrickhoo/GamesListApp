@@ -2,6 +2,7 @@ import React from "react";
 import Genres from "./Genres";
 import Platforms from "./Platforms";
 import GameImage from "./GameImage";
+import { AiFillStar } from "react-icons/ai";
 
 import Container from "./Container";
 import Favourite from "./Favourite";
@@ -33,7 +34,7 @@ const GameCard = ({
       }
     >
       <div>
-        <p className="text-center">{title}</p>
+        <p className="text-center font-medium text-lg">{title}</p>
       </div>
       <div className="px-2">
         <Genres moreInfo={moreInfo} genres={genres} />
@@ -50,7 +51,12 @@ const GameCard = ({
       </div>
 
       <div className="flex justify-evenly items-center px-4 py-2">
-        <div>{rating}/5</div>
+        <div>
+          <div className="flex items-center space-x-2">
+            <AiFillStar />
+            <div>{rating}/5</div>
+          </div>
+        </div>
         {moreInfo ? (
           <div className="hover:cursor-pointer hover:text-blue-500">
             <a
