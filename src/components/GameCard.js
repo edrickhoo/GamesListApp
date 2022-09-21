@@ -41,7 +41,7 @@ const GameCard = ({
 
         <Platforms moreInfo={moreInfo} platforms={platforms} />
       </div>
-      <div className="flex space-x-2 items-center">
+      <div className="flex space-x-2 items-center flex-col md:flex-row px-1 md:px-0">
         <GameImage img={img} />
         {moreInfo ? (
           <p className="pr-4 overflow-y-scroll max-h-[300px] w-full text-sm md:text-base">
