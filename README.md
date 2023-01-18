@@ -12,7 +12,7 @@
 
 ## Deployed Version
 
-* [Link]( https://vercel.com/edrickhoo/games-list-app)
+* [Link]( https://games-list-app.vercel.app/)
 
 ## Setup
 
