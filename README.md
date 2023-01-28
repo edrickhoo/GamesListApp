@@ -12,7 +12,7 @@
 
 ## Deployed Version
 
-* [Link]( https://vercel.com/edrickhoo/games-list-app)
+* [Link]( https://games-list-app.vercel.app/)
 
 ## Setup
 
@@ -39,17 +39,17 @@ This project is designed to reinforce your React learnings and make sure that yo
 
 * Home Page
   - A Grid of games -- [x]
-  - As a user beable to filter through games on page by console -- [x]
-  - As a user beable to favourite/favourite a game -- [x]
-  - As a user beable to view more information of a game which causes a modal to pop up -- [x]
-  - As a user beable to search for specific titiles -- [x]
+  - As a user be able to filter through games on page by console -- [x]
+  - As a user be able to favourite/unfavourite a game -- [x]
+  - As a user be able to view more information of a game which causes a modal to pop up -- [x]
+  - As a user be able to search for specific titiles -- [x]
   
 * Favourite Page
   - Store favourites in local storage to be accessed on reopen/refresh -- [x]
   - Display favourited games -- [x]
-  - As a user beable to favourite/unfavourite a game -- [x]
-  - As a user beable to search through favourited games -- [x]
-  - As a user beable to filter through favourited games by console -- [x]
+  - As a user be able to favourite/unfavourite a game -- [x]
+  - As a user be able to search through favourited games -- [x]
+  - As a user be able to filter through favourited games by console -- [x]
   
  * Ensure application is responsive on both mobile and desktop -- [x]
   
@@ -59,7 +59,7 @@ This project is designed to reinforce your React learnings and make sure that yo
 * Looked at similar web applications online to see how functionality worked in these list search type apps.
 * Researched the rawgAPI docs and tested end points to see what type of data and structure that is returned.
 * This was my first major project with react, so there was lots of trial and error with react in general, researching react docs and videos on state useEffect was crucial in learning what i need to complete this project.
-* At first the project was basic only to fetched a query search and display list of games, additional feature were added slowly once basic functionality was done.
+* At first the project was basic only to fetch a query search and display list of games, additional features were added slowly once basic functionality was done.
 * Styling was done with tailwindCSS which uses utility classes to style elements.
 * Additional libraries:
   - react-router-dom - Used to create routes in the application.
@@ -76,11 +76,11 @@ This project is designed to reinforce your React learnings and make sure that yo
 * What was a challenge?
   - As it was my first react project I found how to correctly use useEffect and when to useState challenging, sometimes causing an infinite loop in the useEffect. But through researching and watching videos on these topics I was able to overcome the challenges and complete the web app.
 * What you'd do differently?
-  - Not store the favourites as an array of objects in local storage. As in a case where favourites are stored but the live data is updated for example the rating stored in local favourites is a 3/5 but the live search of the same game is updated to a 4/5 rating. The local stoarge data would be not up to date. To solve this I would like to store a an array of unique IDs of my favourited games, and when I change to the favourites route use a useEffect and map through the the local storage array of ids putting them in a fetch() with rawgAPI url with search query with each id in the array. After it would use a proimse.All() to fetch all results at once and then set favourites state to the array of objects that comes back to be rendered.
+  - Not store the favorites as an array of objects in local storage. As in a case where favorites are stored but the live data is updated for example the rating stored in local favorites is a 3/5 but the live search of the same game is updated to a 4/5 rating. The local storage data would be not up to date. To solve this I would like to store a an array of unique IDs of my favorite games, and when I change to the favorites route use a useEffect and map through the the local storage array of ids putting them in a fetch() with rawgAPI url with search query with each id in the array. After, it would use a proimse.All() to fetch all results at once and then set the favorites state to the array of objects that comes back to be rendered.
 
 ## Future Goals
 
-* Change local favourite stoarge to store game unique ID to be refetched to get up to date data.
+* Change local favorite storage to store game unique ID to be re fetched to get up to date data.
 * Add testing.
 * Style the page better, with a color palette.
 
@@ -95,7 +95,6 @@ This project is designed to reinforce your React learnings and make sure that yo
 
 *  [Portfolio]( https://edric-khoo.vercel.app/)
 *  [Linkedin]( https://www.linkedin.com/in/edric-khoo-98881b173/)
-
 
 
 
