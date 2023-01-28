@@ -24,8 +24,8 @@ const Header = ({ selected, setSelected }) => {
             onClick={() => setSelected("Home")}
             to="/"
             href=""
-            className={`text-white hover:bg-white/70 py-2 px-2 ${
-              selected === "Home" ? "bg-white/80" : null
+            className={`text-white hover:bg-neutral-600 py-2 px-2 ${
+              selected === "Home" ? "bg-neutral-600 border-white border" : null
             } `}
           >
             Home
@@ -34,8 +34,10 @@ const Header = ({ selected, setSelected }) => {
             onClick={() => setSelected("Favourites")}
             to="favourites"
             href=""
-            className={`text-white hover:bg-white/70 py-2 px-2 ${
-              selected === "Favourites" ? "bg-white/80" : null
+            className={`text-white hover:bg-neutral-600 py-2 px-2 ${
+              selected === "Favourites"
+                ? "bg-neutral-600 border-white border"
+                : null
             }`}
           >
             My Favourites
